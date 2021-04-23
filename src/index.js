@@ -24,14 +24,34 @@ import './index.css';
     );
  }
 
- const Author = () =>{
-     return(
-        <span className="author">
-            <span className="name">Isaac Malemelo</span>
-            <span className="handle">@imalemelo</span>
-        </span>
-     );
- }
+ const Author = () =>(
+    <span className="author">
+        <span className="name">Isaac Malemelo</span>
+        <span className="handle">@imalemelo</span>
+    </span>
+ );
+
+
+ const Time = () => (
+    <span className="time">3h ago</span>
+);
+    
+const ReplyButton = () => (
+    <i className="fa fa-reply reply-button"/>
+);
+    
+const RetweetButton = () => (
+    <i className="fa fa-retweet retweet-button"/>
+);
+    
+const LikeButton = () => (
+    <i className="fa fa-heart like-button"/>
+);
+    
+const MoreOptionsButton = () => (
+    <i className="fa fa-ellipsis-h more-options-button"/>
+);
+    
 
 
 function Tweet(){
