@@ -15,11 +15,33 @@ import './index.css';
         <img src="https://www.gravatar.com/avatar/nothing" className="avatar" alt="avatar"/>
      );
  }
+
+ const Message = () =>{
+    return(
+        <div className="message">
+            I am loving practicing React js for a turing test and job.
+        </div>
+    );
+ }
+
+ const Author = () =>{
+     return(
+        <span className="author">
+            <span className="name">Isaac Malemelo</span>
+            <span className="handle">@imalemelo</span>
+        </span>
+     );
+ }
+
+
 function Tweet(){
     return (
         <div className="tweet">
             <Avatar/>
-            Tweet
+            <div className="content">
+                <Author/>
+                <Message/>
+            </div>
         </div>
     );
 }
