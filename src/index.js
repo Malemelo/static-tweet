@@ -10,57 +10,63 @@ import './index.css';
         </div>
     );
 } */
- const Avatar = () => {
-     return(
-        <img src="https://www.gravatar.com/avatar/nothing" className="avatar" alt="avatar"/>
-     );
- }
+const Avatar = () => {
+    return (
+        <img src="https://www.gravatar.com/avatar/nothing" className="avatar" alt="avatar" />
+    );
+}
 
- const Message = () =>{
-    return(
+const Message = () => {
+    return (
         <div className="message">
             I am loving practicing React js for a turing test and job.
         </div>
     );
- }
+}
 
- const Author = () =>(
+const Author = () => (
     <span className="author">
         <span className="name">Isaac Malemelo</span>
         <span className="handle">@imalemelo</span>
     </span>
- );
+);
 
 
- const Time = () => (
+const Time = () => (
     <span className="time">3h ago</span>
 );
-    
+
 const ReplyButton = () => (
-    <i className="fa fa-reply reply-button"/>
+    <i className="fa fa-reply reply-button" />
 );
-    
+
 const RetweetButton = () => (
-    <i className="fa fa-retweet retweet-button"/>
+    <i className="fa fa-retweet retweet-button" />
 );
-    
+
 const LikeButton = () => (
-    <i className="fa fa-heart like-button"/>
+    <i className="fa fa-heart like-button" />
 );
-    
+
 const MoreOptionsButton = () => (
-    <i className="fa fa-ellipsis-h more-options-button"/>
+    <i className="fa fa-ellipsis-h more-options-button" />
 );
-    
 
 
-function Tweet(){
+
+function Tweet() {
     return (
         <div className="tweet">
-            <Avatar/>
+            <Avatar />
             <div className="content">
-                <Author/>
-                <Message/>
+                <Author />
+                <Message />
+                <div className="buttons">
+                    <ReplyButton />
+                    <RetweetButton />
+                    <LikeButton />
+                    <MoreOptionsButton />
+                </div>
             </div>
         </div>
     );
@@ -68,4 +74,4 @@ function Tweet(){
 
 
 
-reactDom.render(<Tweet/>, document.querySelector('#root'));
+reactDom.render(<Tweet />, document.querySelector('#root'));
